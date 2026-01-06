@@ -1,0 +1,73 @@
+/* Linear gradient background */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+}
+
+/* Title */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+/* Game board */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 10px;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* Cells */
+.cell {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Status text */
+#status {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+}
+
+/* Restart button */
+#restartBtn {
+  padding: 10px 25px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  background: white;
+  color: #764ba2;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+#restartBtn:hover {
+  background: #eee;
+}
